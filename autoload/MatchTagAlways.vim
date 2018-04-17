@@ -51,7 +51,7 @@ function! MatchTagAlways#Setup()
   endif
 
   augroup matchtagalways
-    autocmd! CursorHold,CursorHoldI,WinEnter <buffer>
+    autocmd! CursorMoved,WinEnter <buffer>
           \ call s:HighlightEnclosingTagsIfPossible()
   augroup END
 
